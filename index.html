@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div align="center" class="firstBlock">
+    <div>
+        <div class="row">
+            <label for="name">Name:</label>
+            <input name="name" type="text" id="name" placeholder="name"/>
+        </div>
+        <div class="row">
+            <label for="email">Email</label>
+            <input name="email" id="email" type="text" placeholder="email"/>
+        </div>
+        <div class="row">
+            <label for="tel">Tel.:</label>
+            <input name="tel" id="tel" type="text" placeholder="tel."/>
+        </div>
+            <span>
+                <input type="button" value="Send" onclick="send()"/>
+            </span>
+            <span>
+                <input type="button" value="Get data" onclick="getData() "/>
+            </span>
+            <span>
+                <input type="button" value="Clear data" onclick="localStorage.removeItem('users')"/>
+            </span>
+        </form>
+        <div id="table">
+
+        </div>
+    </div>
+
+
+</body>
+</div>
+</html>
